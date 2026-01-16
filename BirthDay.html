@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Nekha Krishna</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 4rem;
+            animation: glow 2s infinite alternate;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-top: 10px;
+            animation: slideUp 2s ease-out;
+            color: #fffde7;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-top: 10px;
+        }
+
+        .cake {
+            font-size: 5rem;
+            margin-top: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        /* Balloons */
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            font-size: 3rem;
+            animation: float 6s infinite ease-in;
+        }
+
+        .balloon:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .balloon:nth-child(2) { left: 30%; animation-delay: 2s; }
+        .balloon:nth-child(3) { left: 50%; animation-delay: 4s; }
+        .balloon:nth-child(4) { left: 70%; animation-delay: 1s; }
+        .balloon:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff; }
+            to { text-shadow: 0 0 25px #ffeb3b, 0 0 40px #ff4081; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-110vh); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Balloons -->
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+    <div class="balloon">🎈</div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>🎉 Happy Birthday 🎉</h1>
+        <h2>Nekha Krishna 💖</h2>
+        <p>May your day be filled with happiness & smiles ✨</p>
+        <div class="cake">🎂</div>
+    </div>
+
+</body>
+</html>
